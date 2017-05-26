@@ -1,0 +1,12 @@
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Release\ZJCredit.exe.config
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Release\ZJCredit.exe
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Release\ZJCredit.pdb
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Release\HtmlAgilityPack.dll
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Release\MySql.Data.dll
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Release\HtmlAgilityPack.pdb
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Release\HtmlAgilityPack.xml
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\obj\Release\ZJCredit.exe
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\obj\Release\ZJCredit.pdb
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\ZJCredit.exe.config
+F:\myGitHub\ZJCredit\ZJCredit\obj\Release\ZJCredit.exe
+F:\myGitHub\ZJCredit\ZJCredit\obj\Release\ZJCredit.pdb

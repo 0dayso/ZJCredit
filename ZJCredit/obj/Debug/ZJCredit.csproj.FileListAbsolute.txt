@@ -1,0 +1,10 @@
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Debug\ZJCredit.exe.config
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Debug\ZJCredit.exe
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Debug\ZJCredit.pdb
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Debug\HtmlAgilityPack.dll
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Debug\MySql.Data.dll
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Debug\HtmlAgilityPack.pdb
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\bin\Debug\HtmlAgilityPack.xml
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\obj\Debug\ZJCredit.exe
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\obj\Debug\ZJCredit.pdb
+d:\documents\visual studio 2015\Projects\ZJCredit\ZJCredit\obj\Debug\ZJCredit.csprojResolveAssemblyReference.cache
