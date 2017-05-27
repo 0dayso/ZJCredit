@@ -1,0 +1,12 @@
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\ZJCredit.exe.config
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\ZJCredit.exe
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\ZJCredit.pdb
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\HtmlAgilityPack.dll
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\MySql.Data.dll
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\HtmlAgilityPack.pdb
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\HtmlAgilityPack.xml
+F:\myGitHub\ZJCredit\ZJCredit\obj\Release\ZJCreditHMD.csprojResolveAssemblyReference.cache
+F:\myGitHub\ZJCredit\ZJCredit\obj\Release\ZJCredit.exe
+F:\myGitHub\ZJCredit\ZJCredit\obj\Release\ZJCredit.pdb
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\HelpLib.dll
+F:\myGitHub\ZJCredit\ZJCredit\bin\Release\HelpLib.pdb

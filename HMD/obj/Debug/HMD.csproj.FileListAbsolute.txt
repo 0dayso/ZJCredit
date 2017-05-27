@@ -1,0 +1,3 @@
+F:\myGitHub\ZJCredit\HMD\bin\Debug\zjCredit.exe.config
+F:\myGitHub\ZJCredit\HMD\obj\Debug\zjCredit.exe
+F:\myGitHub\ZJCredit\HMD\obj\Debug\zjCredit.pdb

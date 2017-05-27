@@ -1,0 +1,12 @@
+F:\myGitHub\ZJCredit\AdministrativePenalty\obj\Release\AdministrativePenalty.csprojResolveAssemblyReference.cache
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\AdministrativePenalty.exe.config
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\AdministrativePenalty.exe
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\AdministrativePenalty.pdb
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\HelpLib.dll
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\HtmlAgilityPack.dll
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\MySql.Data.dll
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\HelpLib.pdb
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\HtmlAgilityPack.pdb
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\HtmlAgilityPack.xml
+F:\myGitHub\ZJCredit\AdministrativePenalty\obj\Release\AdministrativePenalty.exe
+F:\myGitHub\ZJCredit\AdministrativePenalty\obj\Release\AdministrativePenalty.pdb

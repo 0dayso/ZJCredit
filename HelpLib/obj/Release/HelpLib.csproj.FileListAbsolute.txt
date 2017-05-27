@@ -1,0 +1,10 @@
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\HelpLib.dll.config
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\HelpLib.dll
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\HelpLib.pdb
+F:\myGitHub\ZJCredit\HelpLib\obj\Release\HelpLib.csprojResolveAssemblyReference.cache
+F:\myGitHub\ZJCredit\HelpLib\obj\Release\HelpLib.dll
+F:\myGitHub\ZJCredit\HelpLib\obj\Release\HelpLib.pdb
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\HtmlAgilityPack.dll
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\MySql.Data.dll
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\HtmlAgilityPack.pdb
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\HtmlAgilityPack.xml
