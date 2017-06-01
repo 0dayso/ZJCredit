@@ -1,3 +1,15 @@
 F:\myGitHub\ZJCredit\HMD\bin\Debug\zjCredit.exe.config
 F:\myGitHub\ZJCredit\HMD\obj\Debug\zjCredit.exe
 F:\myGitHub\ZJCredit\HMD\obj\Debug\zjCredit.pdb
+F:\myGitHub\ZJCredit\HMD\bin\Debug\zjCredit.exe
+F:\myGitHub\ZJCredit\HMD\bin\Debug\zjCredit.pdb
+F:\myGitHub\ZJCredit\HMD\bin\Debug\HelpLib.dll
+F:\myGitHub\ZJCredit\HMD\bin\Debug\HtmlAgilityPack.dll
+F:\myGitHub\ZJCredit\HMD\bin\Debug\MySql.Data.dll
+F:\myGitHub\ZJCredit\HMD\bin\Debug\HelpLib.pdb
+F:\myGitHub\ZJCredit\HMD\bin\Debug\HtmlAgilityPack.pdb
+F:\myGitHub\ZJCredit\HMD\bin\Debug\HtmlAgilityPack.xml
+F:\myGitHub\ZJCredit\HMD\obj\Debug\HMD.csprojResolveAssemblyReference.cache
+F:\myGitHub\ZJCredit\HMD\bin\Debug\log4net.config
+F:\myGitHub\ZJCredit\HMD\bin\Debug\log4net.dll
+F:\myGitHub\ZJCredit\HMD\bin\Debug\log4net.xml

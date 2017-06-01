@@ -1,0 +1,276 @@
+2017-06-01 13:13:02,945 [3] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:14:03,775 [3] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 远程服务器返回错误: (504) 网关超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:14:03,779 [3] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 远程服务器返回错误: (504) 网关超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:14:03,815 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:14:03,819 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:14:03,821 [18] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:14:03,823 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:23:45,580 [25] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:23:45,592 [25] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:23:45,598 [25] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:23:45,603 [25] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:23:45,607 [25] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:23:45,611 [25] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:23:45,614 [25] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,694 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,708 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,720 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,728 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,734 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,740 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,746 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:34:41,752 [27] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:36:26,022 [23] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:36:26,066 [26] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:36:26,072 [23] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,005 [20] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 请求被中止: 操作超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,017 [23] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 请求被中止: 操作超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,025 [22] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 请求被中止: 操作超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,031 [23] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 请求被中止: 操作超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,065 [23] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 请求被中止: 操作超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,080 [26] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 请求被中止: 操作超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,105 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,110 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,114 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,119 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,124 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,129 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,133 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,137 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,142 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,147 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,152 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 13:37:27,156 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 操作超时
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 14:31:18,912 [19] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 远程服务器返回错误: (504) 网关超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 144
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 99
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 15:56:54,569 [13] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 远程服务器返回错误: (504) 网关超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByGet(String url) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 92
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 104
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73
+2017-06-01 15:56:54,573 [13] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 远程服务器返回错误: (504) 网关超时。
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByGet(String url) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 92
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 104
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73

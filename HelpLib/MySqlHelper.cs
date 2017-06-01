@@ -224,11 +224,11 @@ namespace ZJCredit
 
 
         /// <summary>
-        /// InsertTableWithDic
+        /// InsertTable
         /// </summary>
         /// <param name="infoDic"></param>
         /// <param name="tableName"></param>
-        public void InsertTableWithDic(Dictionary<string, string> infoDic, string tableName)
+        public void InsertTable(Dictionary<string, string> infoDic, string tableName)
         {
             using (var mySqlConnection = GetMySqlConnection())
             {
@@ -282,83 +282,6 @@ namespace ZJCredit
                 }
                 //关闭连接
                 mySqlConnection.Close();
-            }
-
-        }
-
-        /// <summary>
-        /// InsertTable
-        /// </summary>
-        /// <param name="infoDic"></param>
-        /// <param name="tableName"></param>
-        public void InsertTable(Dictionary<string, string> infoDic, string tableName)
-        {
-            try
-            {
-                //向ge_engine_object表插入新记录
-                string conn = $"server={_dbServer};database={_dbName};Uid={_dbUserName};Pwd={_dbPassWord}";
-                using (var mySqlConnection = new MySqlConnection(conn))
-                {
-                    mySqlConnection.Open();
-                    var strPart1 = $"INSERT INTO {tableName}";
-                    var strPart2 = " VALUES";
-                    var curIndex = 0;
-                    var length = infoDic.Count;
-                    foreach (var info in infoDic)
-                    {
-                        if (curIndex == 0)
-                        {
-                            strPart1 = $"{strPart1}({info.Key}";
-                            strPart2 = $"{strPart2}(@{info.Key}";
-                        }
-                        else if (curIndex == length - 1)
-                        {
-                            strPart1 = $"{strPart1},{info.Key})";
-                            strPart2 = $"{strPart2},@{info.Key})";
-                        }
-                        else
-                        {
-                            strPart1 = $"{strPart1},{info.Key}";
-                            strPart2 = $"{strPart2},@{info.Key}";
-                        }
-
-                        curIndex++;
-
-                    }
-
-                    var str = $"{strPart1}{strPart2}";
-                    //var str = "insert into authcode_r(AuthCodeIndex,AuthCodePic,InDbTime) values(@AuthCodeIndex,@AuthCodePic,@InDbTime)";
-
-                    using (var myComm = new MySqlCommand(str, mySqlConnection))
-                    {
-                        //myComm.Parameters.AddWithValue("@InDbTime", inDbTime);
-                        foreach (var info in infoDic)
-                        {
-                            myComm.Parameters.AddWithValue($"@{info.Key}", info.Value);
-                        }
-
-                        switch (myComm.ExecuteNonQuery())
-                        {
-                            case 1:
-                                Console.WriteLine($"向{tableName}表插入新记录成功！");
-                                break;
-                            case 0:
-                                throw new Exception($"向{tableName}表插入新记录失败！");
-                            default:
-                                throw new Exception($"向{tableName}表插入了多条新记录！");
-                        }
-                    }
-
-
-                    mySqlConnection.Close();
-
-                }
-
-
-            }
-            catch (Exception e)
-            {
-                throw new Exception(e.Message);
             }
 
         }

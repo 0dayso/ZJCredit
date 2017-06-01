@@ -10,3 +10,6 @@ F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\HtmlAgilityPack.pdb
 F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\HtmlAgilityPack.xml
 F:\myGitHub\ZJCredit\AdministrativePenalty\obj\Release\AdministrativePenalty.exe
 F:\myGitHub\ZJCredit\AdministrativePenalty\obj\Release\AdministrativePenalty.pdb
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\log4net.dll
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\log4net.xml
+F:\myGitHub\ZJCredit\AdministrativePenalty\bin\Release\log4net.config

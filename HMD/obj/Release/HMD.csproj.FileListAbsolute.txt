@@ -22,3 +22,6 @@ F:\myGitHub\ZJCredit\HMD\bin\Release\HelpLib.pdb
 F:\myGitHub\ZJCredit\HMD\bin\Release\HtmlAgilityPack.pdb
 F:\myGitHub\ZJCredit\HMD\bin\Release\HtmlAgilityPack.xml
 F:\myGitHub\ZJCredit\HMD\obj\Release\HMD.csprojResolveAssemblyReference.cache
+F:\myGitHub\ZJCredit\HMD\bin\Release\log4net.dll
+F:\myGitHub\ZJCredit\HMD\bin\Release\log4net.xml
+F:\myGitHub\ZJCredit\HMD\bin\Release\log4net.config

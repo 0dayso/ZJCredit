@@ -8,3 +8,6 @@ F:\myGitHub\ZJCredit\HelpLib\bin\Release\HtmlAgilityPack.dll
 F:\myGitHub\ZJCredit\HelpLib\bin\Release\MySql.Data.dll
 F:\myGitHub\ZJCredit\HelpLib\bin\Release\HtmlAgilityPack.pdb
 F:\myGitHub\ZJCredit\HelpLib\bin\Release\HtmlAgilityPack.xml
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\log4net.dll
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\log4net.xml
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\log4net.config

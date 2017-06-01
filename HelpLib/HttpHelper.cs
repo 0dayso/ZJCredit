@@ -107,6 +107,7 @@ namespace ZJCredit
         }
 
 
+
         /// <summary>
         /// GetHtmlByPost
         /// </summary>
@@ -132,11 +133,13 @@ namespace ZJCredit
             httpWebRequest.ContentLength = postDataByte.Length;
             if (!string.IsNullOrEmpty(Cookies))
                 httpWebRequest.Headers.Add("Cookie", Cookies);
+
             //httpWebRequest写入post数据
             using (var inputStream = httpWebRequest.GetRequestStream())
             {
                 inputStream.Write(postDataByte, 0, postDataByte.Length);
             }
+
 
             var httpWebResponse = httpWebRequest.GetResponse() as HttpWebResponse;
             using (var outputStream = httpWebResponse?.GetResponseStream())
@@ -154,6 +157,8 @@ namespace ZJCredit
             return html;
 
         }
+
+
 
         /// <summary>
         /// GetFormatCookies

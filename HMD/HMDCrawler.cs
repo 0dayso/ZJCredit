@@ -14,8 +14,6 @@ namespace ZJCredit
         private readonly HttpHelper _httpHelper;
         private readonly MySqlHelper _mySqlHelper;
         private readonly Queue<string> _urlQueue;
-        //用于锁
-        private object o = new object();
         public HMDCrawler()
         {
             _httpHelper = new HttpHelper();
@@ -49,16 +47,11 @@ namespace ZJCredit
                 var taskArray = new Task[threadTotalNum];
                 for (var i = 0; i < threadTotalNum; i++)
                 {
-                    string curUrl;
-                    //锁住 防止多线程队列重复出队
-                    lock (o)
-                    {
-                        //判断队列是否已经取完 若取完则退出循环
-                        if(_urlQueue.Count==0)
-                            break;
-                        curUrl = _urlQueue.Dequeue();
-                    }
-                    taskArray[i] = new Task(InfoInsertDB, curUrl);
+                    //判断队列是否已经取完 若取完则退出循环
+                    if(_urlQueue.Count==0)
+                        break;
+                    url = _urlQueue.Dequeue();
+                    taskArray[i] = new Task(GetInfoInsertDb, url);
                     taskArray[i].Start();
                 }
 
@@ -74,7 +67,7 @@ namespace ZJCredit
 
 
 
-        private HMDInfo GetHMDInfo(string url)
+        private HMDInfo GetInfo(string url)
         {
             Func<string,string> replaceSpace = s=> s.Trim().Replace("&nbsp;", "");
             
@@ -97,7 +90,7 @@ namespace ZJCredit
             return hmdInfo;
         }
 
-        private void InsertDB(HMDInfo hmdInfo)
+        private void InsertDb(HMDInfo hmdInfo)
         {
             Dictionary<string, string> dic = new Dictionary<string, string>
             {
@@ -126,10 +119,10 @@ namespace ZJCredit
         }
 
 
-        private void InfoInsertDB(object o)
+        private void GetInfoInsertDb(object o)
         {
-            var info = GetHMDInfo((string) o);
-            InsertDB(info);
+            var info = GetInfo((string) o);
+            InsertDb(info);
         }
 
 
