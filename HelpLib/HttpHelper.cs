@@ -70,8 +70,9 @@ namespace ZJCredit
         /// GetHtmlByGet
         /// </summary>
         /// <param name="url"></param>
+        /// <param name="proxy"></param>
         /// <returns></returns>
-        public string GetHtmlByGet(string url)
+        public string GetHtmlByGet(string url,IWebProxy proxy = null)
         {
 
             var stringEmpty = string.Empty;
@@ -86,9 +87,11 @@ namespace ZJCredit
             httpWebRequest.Timeout = Timeout;
             httpWebRequest.AllowAutoRedirect = AllowAutoRedirect;
             httpWebRequest.Referer = Referer;
+            if (proxy != null)
+                httpWebRequest.Proxy = proxy;
             if (!string.IsNullOrEmpty(Cookies))
                 httpWebRequest.Headers.Add("Cookie", Cookies);
-
+            
             var httpWebResponse = httpWebRequest.GetResponse() as HttpWebResponse;
 
             using (var stream = httpWebResponse?.GetResponseStream())
@@ -113,8 +116,9 @@ namespace ZJCredit
         /// </summary>
         /// <param name="url"></param>
         /// <param name="postDataString"></param>
+        /// <param name="proxy"></param>
         /// <returns></returns>
-        public string GetHtmlByPost(string url, string postDataString)
+        public string GetHtmlByPost(string url, string postDataString,IWebProxy proxy = null)
         {
             var stringEmpty = string.Empty;
             var html = stringEmpty;
@@ -131,6 +135,8 @@ namespace ZJCredit
             httpWebRequest.ContentType = "application/x-www-form-urlencoded";
             httpWebRequest.Referer = Referer;
             httpWebRequest.ContentLength = postDataByte.Length;
+            if (proxy != null)
+                httpWebRequest.Proxy = proxy;
             if (!string.IsNullOrEmpty(Cookies))
                 httpWebRequest.Headers.Add("Cookie", Cookies);
 
@@ -226,9 +232,12 @@ namespace ZJCredit
         /// <returns></returns>
         public static Encoding GetHtmlEncoding(string html)
         {
+            // 目前发现的两种格式
+            // <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+            // <meta charset="utf-8">
             var encoding =
                 Regex.Match(Regex.Match(html, "<meta.*?>").Value,
-                    @"(?<=[cC][hH][aA][rR][sS][eE][tT][\s]*=[\s]*)[\S]+?(?=[\s""])").Value;
+                    @"(?<=[cC][hH][aA][rR][sS][eE][tT][\s]*=[\s]*[""]?[\s]*)[^""]+?(?=[\s""])").Value;
             return Encoding.GetEncoding(encoding);
         }
     }

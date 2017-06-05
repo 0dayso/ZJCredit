@@ -1,0 +1,10 @@
+2017-06-05 15:58:57,427 [6] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameMySql.Data.MySqlClient.MySqlException (0x80004005): Incorrect string value: '\xF1\xBE\xAF\xBD\xEF\xBF...' for column 'PenalyText' at row 1
+   在 MySql.Data.MySqlClient.MySqlStream.ReadPacket()
+   在 MySql.Data.MySqlClient.NativeDriver.GetResult(Int32& affectedRow, Int64& insertedId)
+   在 MySql.Data.MySqlClient.Driver.NextResult(Int32 statementId, Boolean force)
+   在 MySql.Data.MySqlClient.MySqlDataReader.NextResult()
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteReader(CommandBehavior behavior)
+   在 MySql.Data.MySqlClient.MySqlCommand.ExecuteNonQuery()
+   在 ZJCredit.MySqlHelper.InsertTable(Dictionary`2 infoDic, String tableName) 位置 F:\myGitHub\ZJCredit\HelpLib\MySqlHelper.cs:行号 273
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 73

@@ -11,26 +11,25 @@ namespace ZJCredit
 {
     class HMDCrawler
     {
-        private readonly HttpHelper _httpHelper;
         private readonly MySqlHelper _mySqlHelper;
         private readonly Queue<string> _urlQueue;
+        private Encoding _httpEncoding;
         public HMDCrawler()
         {
-            _httpHelper = new HttpHelper();
             _mySqlHelper = new MySqlHelper();
             _urlQueue = new Queue<string>();
         }
 
         public void Run()
         {
-            
-            var html = _httpHelper.GetHtmlByGet("http://www.zjcredit.gov.cn/hmd/hmd.do");
+            var httpHelper = new HttpHelper();
+            var html = httpHelper.GetHtmlByGet("http://www.zjcredit.gov.cn/hmd/hmd.do");
             //得到网页编码
-            _httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(html);
-            html = _httpHelper.GetHtmlByGet("http://www.zjcredit.gov.cn/hmd/hmd.do");
+            _httpEncoding = httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(html);
+            html = httpHelper.GetHtmlByGet("http://www.zjcredit.gov.cn/hmd/hmd.do");
 
             var url = $"http://www.zjcredit.gov.cn/hmd/{Regex.Match(Regex.Match(Regex.Match(html, "initData.*?]").Value, "\".*?\"").Value, @"(?<=\$)[^\$]*(?="")").Value}";
-            html = _httpHelper.GetHtmlByGet(url);
+            html = httpHelper.GetHtmlByGet(url);
 
             var htmlNode = HtmlAgilityPackHelper.GetDocumentNodeByHtml(html);
  
@@ -72,7 +71,8 @@ namespace ZJCredit
             Func<string,string> replaceSpace = s=> s.Trim().Replace("&nbsp;", "");
             
             var hmdInfo = new HMDInfo();
-            var html = _httpHelper.GetHtmlByGet(url);
+            var httpHelper = new HttpHelper {HttpEncoding = _httpEncoding};
+            var html = httpHelper.GetHtmlByGet(url);
             var htmlNode = HtmlAgilityPackHelper.GetDocumentNodeByHtml(html);
             hmdInfo.PubOrganName = replaceSpace(htmlNode.SelectSingleNode("//table[3]//tr[1]/td[2]").InnerText);
             hmdInfo.ProjectName = replaceSpace(htmlNode.SelectSingleNode("//table[3]//tr[2]/td[2]/nobr").InnerText);

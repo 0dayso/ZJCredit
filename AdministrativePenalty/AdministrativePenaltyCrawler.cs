@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using System.Net;
 using System.Runtime.InteropServices;
 using System.Text;
 using System.Text.RegularExpressions;
@@ -15,17 +16,17 @@ namespace AdministrativePenalty
     class AdministrativePenaltyCrawler
     {
         private readonly MySqlHelper _mySqlHelper;
-        private readonly HttpHelper _httpHelper;
         private readonly Queue<string> _urlQueue;
         private int _totalRecord;
         private int _curRecord;
         private readonly int _interval;
-        private EventHandler<ExceptionEventArgs> eventHandler;
+        private EventHandler<ExceptionEventArgs> _eventHandler;
+        private Encoding _httpEncoding;
+
 
         public AdministrativePenaltyCrawler()
         {
             _mySqlHelper = new MySqlHelper();
-            _httpHelper = new HttpHelper {Timeout = 5*60*1000};
             _urlQueue = new Queue<string>();
             _totalRecord = 0;
             _curRecord = 1;
@@ -34,9 +35,12 @@ namespace AdministrativePenalty
 
         public void Run()
         {
+            var httpHelper = new HttpHelper { Timeout = 5 * 60 * 1000 };
+            
             var url = "http://www.zjcredit.gov.cn/html/sgsList02.htm";
-            InitHttpEncoding(url);
-            InitTotalRecord(url);
+            _httpEncoding = httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(httpHelper.GetHtmlByGet(url));
+            InitHttpEncoding(url, httpHelper);
+            InitTotalRecord(url, httpHelper);
             InitUrlQueue();
             var threadNum = 5;
             var tasks = new Task[threadNum];
@@ -78,16 +82,16 @@ namespace AdministrativePenalty
             }
             catch (Exception e)
             {
-                eventHandler += WriteLog;
-                eventHandler(this,new ExceptionEventArgs(e));
+                _eventHandler += WriteLog;
+                _eventHandler(this,new ExceptionEventArgs(e));
             }
         }
 
         private void Test()
         {
             var e = new Exception("测试日志");
-            eventHandler += WriteLog;
-            eventHandler(this, new ExceptionEventArgs(e));
+            _eventHandler += WriteLog;
+            _eventHandler(this, new ExceptionEventArgs(e));
         }
 
 
@@ -96,12 +100,17 @@ namespace AdministrativePenalty
             Func<string, string> removeSpace = s => s.Replace("&nbsp;", "");
 
             List<Dictionary<string,string>> listDic = new List<Dictionary<string, string>>();
-            var html = _httpHelper.GetHtmlByPost(url, postDataString);
+            var httpHelper = new HttpHelper
+            {
+                Timeout = 5*60*1000,
+                HttpEncoding = _httpEncoding
+            };
+            var html = httpHelper.GetHtmlByPost(url, postDataString);
             var urlCollection = Regex.Matches(Regex.Match(Regex.Match(html, @"dataStore[\s]*=[\s]*\[.*?\]").Value, "(?<=\")[^,]+?(?=\")").Value,@"(?<=\$)[^\$]*$");
             foreach (Match caseUrl in urlCollection)
             {
 
-                html = _httpHelper.GetHtmlByGet($"http://www.zjcredit.gov.cn{caseUrl.Value}");
+                html = httpHelper.GetHtmlByGet($"http://www.zjcredit.gov.cn{caseUrl.Value}");
                 var htmlNode = HtmlAgilityPackHelper.GetDocumentNodeByHtml(html);
                 var administrativePenaltyInfo = new AdministrativePenaltyInfo();
 
@@ -137,16 +146,16 @@ namespace AdministrativePenalty
         }
 
 
-        private void InitHttpEncoding(string url)
+        private void InitHttpEncoding(string url,HttpHelper httpHelper)
         {
-            var html = _httpHelper.GetHtmlByGet(url);
-            _httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(html);
+            var html = httpHelper.GetHtmlByGet(url);
+            httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(html);
         }
 
         
-        private void InitTotalRecord(string url)
+        private void InitTotalRecord(string url,HttpHelper httpHelper)
         {
-            var html = _httpHelper.GetHtmlByGet(url);
+            var html = httpHelper.GetHtmlByGet(url);
             _totalRecord = int.Parse(Regex.Match(html, @"(?<=totalRecord[\s]*:[\s]*)\d+").Value);
         }
 
@@ -192,6 +201,16 @@ namespace AdministrativePenalty
         {
             var administrativePenaltyCrawler = new AdministrativePenaltyCrawler();
             administrativePenaltyCrawler.Run();
+        }
+
+
+        private void Test()
+        {
+            var httpHelper = new HttpHelper();
+            //httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(httpHelper.GetHtmlByGet("https://github.com/charles427"));
+            var html = httpHelper.GetHtmlByGet("https://github.com/charles427", new WebProxy("91.121.165.21:443"));
+            //var html = httpHelper.GetHtmlByGet("http://dev.kuaidaili.com/api/getproxy/?orderid=909664274113782&num=100&b_pcchrome=1&b_pcie=1&b_pcff=1&protocol=1&method=2&an_an=1&an_ha=1&sep=1");
+
         }
     }
 }
