@@ -11,3 +11,5 @@ F:\myGitHub\ZJCredit\HelpLib\bin\Release\HtmlAgilityPack.xml
 F:\myGitHub\ZJCredit\HelpLib\bin\Release\log4net.dll
 F:\myGitHub\ZJCredit\HelpLib\bin\Release\log4net.xml
 F:\myGitHub\ZJCredit\HelpLib\bin\Release\log4net.config
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\Newtonsoft.Json.dll
+F:\myGitHub\ZJCredit\HelpLib\bin\Release\Newtonsoft.Json.xml

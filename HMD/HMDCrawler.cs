@@ -42,8 +42,9 @@ namespace ZJCredit
 
             while (_urlQueue.Count!=0)
             {
-                var threadTotalNum = 5;
+                var threadTotalNum = _urlQueue.Count>5?5:_urlQueue.Count;
                 var taskArray = new Task[threadTotalNum];
+                
                 for (var i = 0; i < threadTotalNum; i++)
                 {
                     //判断队列是否已经取完 若取完则退出循环
@@ -55,9 +56,9 @@ namespace ZJCredit
                 }
 
                 //等待这几个线程结束
-                for (var i = 0; i < threadTotalNum; i++)
+                for (var j = 0; j < threadTotalNum; j++)
                 {
-                    taskArray[i].Wait();
+                    taskArray[j].Wait();
                 }
 
             }

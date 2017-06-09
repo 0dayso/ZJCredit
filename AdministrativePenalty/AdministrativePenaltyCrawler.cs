@@ -33,6 +33,8 @@ namespace AdministrativePenalty
             _interval = 80;
         }
 
+        
+
         public void Run()
         {
             var httpHelper = new HttpHelper { Timeout = 5 * 60 * 1000 };
@@ -42,11 +44,11 @@ namespace AdministrativePenalty
             InitHttpEncoding(url, httpHelper);
             InitTotalRecord(url, httpHelper);
             InitUrlQueue();
-            var threadNum = 5;
-            var tasks = new Task[threadNum];
             
             while (_urlQueue.Count!=0)
             {
+                var threadNum = _urlQueue.Count>5?5:_urlQueue.Count;
+                var tasks = new Task[threadNum];
                 for (var i = 0; i < threadNum; i++)
                 {
                     if (_urlQueue.Count == 0)
@@ -65,8 +67,6 @@ namespace AdministrativePenalty
             
 
         }
-
-
 
 
 
@@ -208,9 +208,11 @@ namespace AdministrativePenalty
         {
             var httpHelper = new HttpHelper();
             //httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(httpHelper.GetHtmlByGet("https://github.com/charles427"));
-            var html = httpHelper.GetHtmlByGet("https://github.com/charles427", new WebProxy("91.121.165.21:443"));
+            var html = httpHelper.GetHtmlByGet("https://www.bing.com/", new WebProxy("89.188.229.14:8080"));
             //var html = httpHelper.GetHtmlByGet("http://dev.kuaidaili.com/api/getproxy/?orderid=909664274113782&num=100&b_pcchrome=1&b_pcie=1&b_pcff=1&protocol=1&method=2&an_an=1&an_ha=1&sep=1");
+            Console.WriteLine(html);
 
+            Console.WriteLine("123");
         }
     }
 }

@@ -13,3 +13,5 @@ F:\myGitHub\ZJCredit\HMD\obj\Debug\HMD.csprojResolveAssemblyReference.cache
 F:\myGitHub\ZJCredit\HMD\bin\Debug\log4net.config
 F:\myGitHub\ZJCredit\HMD\bin\Debug\log4net.dll
 F:\myGitHub\ZJCredit\HMD\bin\Debug\log4net.xml
+F:\myGitHub\ZJCredit\HMD\bin\Debug\Newtonsoft.Json.dll
+F:\myGitHub\ZJCredit\HMD\bin\Debug\Newtonsoft.Json.xml

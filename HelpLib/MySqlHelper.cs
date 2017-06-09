@@ -143,16 +143,15 @@ namespace ZJCredit
         /// <returns></returns>
         public Dictionary<string, List<object>> GetSelectDicBySql(string sqlSelect)
         {
-            var mySqlConnection = GetMySqlConnection();
-            var mySqlCommand = GetMySqlCommand(sqlSelect, mySqlConnection);
-
-            mySqlConnection.Open();
-
-            var dic = GetSelectDic(mySqlCommand);
-
-            mySqlConnection.Close();
-
-            return dic;
+            using (var mySqlConnection = GetMySqlConnection())
+            {
+                using (var mySqlCommand = GetMySqlCommand(sqlSelect, mySqlConnection))
+                {
+                    mySqlConnection.Open();
+                    var dic = GetSelectDic(mySqlCommand);
+                    return dic;
+                }
+            }
         }
 
         /// <summary>
@@ -170,11 +169,14 @@ namespace ZJCredit
         /// <param name="sqlUpdate"></param>
         public void UpdateTable(string sqlUpdate)
         {
-            var mySqlConnection = GetMySqlConnection();
-            var mySqlCommand = GetMySqlCommand(sqlUpdate, mySqlConnection);
-            mySqlConnection.Open();
-            UpdateTable(mySqlCommand);
-            mySqlConnection.Close();
+            using (var mySqlConnection = GetMySqlConnection())
+            {
+                using (var mySqlCommand = GetMySqlCommand(sqlUpdate, mySqlConnection))
+                {
+                    mySqlConnection.Open();
+                    UpdateTable(mySqlCommand);
+                }
+            }
         }
 
         /// <summary>
@@ -192,11 +194,14 @@ namespace ZJCredit
         /// <param name="sqlDelete"></param>
         public void DeleteTable(string sqlDelete)
         {
-            var mySqlConnection = GetMySqlConnection();
-            var mySqlCommand = GetMySqlCommand(sqlDelete, mySqlConnection);
-            mySqlConnection.Open();
-            DeleteTable(mySqlCommand);
-            mySqlConnection.Close();
+            using (var mySqlConnection = GetMySqlConnection())
+            {
+                using (var mySqlCommand = GetMySqlCommand(sqlDelete, mySqlConnection))
+                {
+                    mySqlConnection.Open();
+                    DeleteTable(mySqlCommand);
+                }
+            }
         }
 
         /// <summary>
@@ -214,11 +219,14 @@ namespace ZJCredit
         /// <param name="sqlInsert"></param>
         public void InsertTable(string sqlInsert)
         {
-            var mySqlConnection = GetMySqlConnection();
-            var mySqlCommand = GetMySqlCommand(sqlInsert, mySqlConnection);
-            mySqlConnection.Open();
-            InsertTable(mySqlCommand);
-            mySqlConnection.Close();
+            using (var mySqlConnection = GetMySqlConnection())
+            {
+                using (var mySqlCommand = GetMySqlCommand(sqlInsert, mySqlConnection))
+                {
+                    mySqlConnection.Open();
+                    InsertTable(mySqlCommand);
+                }
+            }
         }
 
 
@@ -262,26 +270,26 @@ namespace ZJCredit
 
                 var str = $"{strPart1}{strPart2}";
 
-                var mySqlCommand = GetMySqlCommand(str, mySqlConnection);
-
-
-                foreach (var info in infoDic)
+                using (var mySqlCommand = GetMySqlCommand(str, mySqlConnection))
                 {
-                    mySqlCommand.Parameters.AddWithValue($"@{info.Key}", info.Value);
-                }
 
-                switch (mySqlCommand.ExecuteNonQuery())
-                {
-                    case 1:
-                        Console.WriteLine($"向{tableName}表插入新记录成功！");
-                        break;
-                    case 0:
-                        throw new Exception($"向{tableName}表插入新记录失败！");
-                    default:
-                        throw new Exception($"向{tableName}表插入了多条新记录！");
+
+                    foreach (var info in infoDic)
+                    {
+                        mySqlCommand.Parameters.AddWithValue($"@{info.Key}", info.Value);
+                    }
+
+                    switch (mySqlCommand.ExecuteNonQuery())
+                    {
+                        case 1:
+                            Console.WriteLine($"向{tableName}表插入新记录成功！");
+                            break;
+                        case 0:
+                            throw new Exception($"向{tableName}表插入新记录失败！");
+                        default:
+                            throw new Exception($"向{tableName}表插入了多条新记录！");
+                    }
                 }
-                //关闭连接
-                mySqlConnection.Close();
             }
 
         }
@@ -307,11 +315,11 @@ namespace ZJCredit
         public bool GetLock(MySqlConnection mySqlConnection, string lockName, int timeout = 10)
         {
             var sqlLock = $"SELECT GET_LOCK('{lockName}',{timeout});";
-            var mySqlCommandLock = GetMySqlCommand(sqlLock, mySqlConnection);
-            //mySqlConnection.Open();
-            var result = mySqlCommandLock.ExecuteScalar();
-            //mySqlConnection.Close();
-            return result.ToString() == "1";
+            using (var mySqlCommandLock = GetMySqlCommand(sqlLock, mySqlConnection))
+            {
+                var result = mySqlCommandLock.ExecuteScalar();
+                return result.ToString() == "1";
+            }
         }
 
 
@@ -324,11 +332,11 @@ namespace ZJCredit
         public bool GetReleaseLock(MySqlConnection mySqlConnection, string lockName)
         {
             var sqlUnLock = $"SELECT RELEASE_LOCK('{lockName}');";
-            var mySqlCommandReleaseLock = GetMySqlCommand(sqlUnLock, mySqlConnection);
-            //mySqlConnection.Open();
-            var result = mySqlCommandReleaseLock.ExecuteScalar();
-            //mySqlConnection.Close();
-            return result.ToString() == "1";
+            using (var mySqlCommandReleaseLock = GetMySqlCommand(sqlUnLock, mySqlConnection))
+            {
+                var result = mySqlCommandReleaseLock.ExecuteScalar();
+                return result.ToString() == "1";
+            }
         }
 
 
@@ -339,16 +347,17 @@ namespace ZJCredit
         {
             //var mysqlHelper = new MysqlHelper("127.0.0.1", "zhanxian", "root", "root");
             var mySqlHelper = new MySqlHelper();
-            var mySqlConnection = GetMySqlConnection();
-            var sqlSelect = "SELECT company FROM jd";
-            var mySqlCommand = GetMySqlCommand(sqlSelect, mySqlConnection);
+            using (var mySqlConnection = GetMySqlConnection())
+            {
+                var sqlSelect = "SELECT company FROM jd";
+                using (var mySqlCommand = GetMySqlCommand(sqlSelect, mySqlConnection))
+                {
 
-            mySqlConnection.Open();
+                    mySqlConnection.Open();
 
-            var dic = GetSelectDic(mySqlCommand);
-
-            mySqlConnection.Close();
-
+                    var dic = GetSelectDic(mySqlCommand);
+                }
+            }
         }
 
         /// <summary>
