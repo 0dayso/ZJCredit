@@ -12,6 +12,7 @@ using ZJCredit;
 
 namespace HelpLib
 {
+    
     public class ProxyHelper
     {
         private readonly HashSet<string> _proxyHashSetSet = new HashSet<string>();
@@ -132,8 +133,12 @@ namespace HelpLib
             Console.WriteLine($"usefulCount:{usefulCount},uselessCount:{uselessCount}");
         }
 
+        
         private void Test()
         {
+
+            List<int> list = new List<int>();
+             
             ////kuaidaili
             //var url = "http://dev.kuaidaili.com/api/getproxy/?orderid=909664274113782&num=100&b_pcchrome=1&b_pcie=1&b_pcff=1&protocol=2&method=2&an_ha=1&sp1=1&quality=1&sep=1";
             //InitProxyHashSet(url, DaiLiType.KuaiDaiLi);

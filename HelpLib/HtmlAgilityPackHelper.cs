@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using HtmlAgilityPack;
 
+
 namespace ZJCredit
 {
     public class HtmlAgilityPackHelper
@@ -18,6 +19,12 @@ namespace ZJCredit
             var doc = new HtmlDocument();
             doc.LoadHtml(html);
             return doc.DocumentNode;
+        }
+
+
+        void Test()
+        {
+            GetDocumentNodeByHtml("123");
         }
 
 

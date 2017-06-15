@@ -22,12 +22,12 @@ namespace ZJCredit
 
         public void Run()
         {
+            var firstUrl = "http://www.zjcredit.gov.cn/hmd/hmd.do";
             var httpHelper = new HttpHelper();
-            var html = httpHelper.GetHtmlByGet("http://www.zjcredit.gov.cn/hmd/hmd.do");
+            var html = httpHelper.GetHtmlByGet(firstUrl);
             //得到网页编码
             _httpEncoding = httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(html);
-            html = httpHelper.GetHtmlByGet("http://www.zjcredit.gov.cn/hmd/hmd.do");
-
+            html = httpHelper.GetHtmlByGet(firstUrl);
             var url = $"http://www.zjcredit.gov.cn/hmd/{Regex.Match(Regex.Match(Regex.Match(html, "initData.*?]").Value, "\".*?\"").Value, @"(?<=\$)[^\$]*(?="")").Value}";
             html = httpHelper.GetHtmlByGet(url);
 

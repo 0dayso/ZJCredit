@@ -1,0 +1,17 @@
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\log4net.config
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\Sincerity.exe.config
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\Sincerity.exe
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\Sincerity.pdb
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\HelpLib.dll
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\HtmlAgilityPack.dll
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\log4net.dll
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\Newtonsoft.Json.dll
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\MySql.Data.dll
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\HelpLib.pdb
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\HtmlAgilityPack.pdb
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\HtmlAgilityPack.xml
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\log4net.xml
+F:\myGitHub\ZJCredit\Sincerity\bin\Debug\Newtonsoft.Json.xml
+F:\myGitHub\ZJCredit\Sincerity\obj\Debug\Sincerity.csprojResolveAssemblyReference.cache
+F:\myGitHub\ZJCredit\Sincerity\obj\Debug\Sincerity.exe
+F:\myGitHub\ZJCredit\Sincerity\obj\Debug\Sincerity.pdb

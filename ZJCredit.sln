@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdministrativePenalty", "Ad
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HMD", "HMD\HMD.csproj", "{BB38437A-DF56-493D-8AC0-678B0D35142C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sincerity", "Sincerity\Sincerity.csproj", "{F39C92AE-2B18-4427-A6FF-AEC5A5A86321}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{BB38437A-DF56-493D-8AC0-678B0D35142C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BB38437A-DF56-493D-8AC0-678B0D35142C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BB38437A-DF56-493D-8AC0-678B0D35142C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F39C92AE-2B18-4427-A6FF-AEC5A5A86321}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F39C92AE-2B18-4427-A6FF-AEC5A5A86321}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F39C92AE-2B18-4427-A6FF-AEC5A5A86321}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F39C92AE-2B18-4427-A6FF-AEC5A5A86321}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

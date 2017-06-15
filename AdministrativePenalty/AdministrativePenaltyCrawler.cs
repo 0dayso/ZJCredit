@@ -20,7 +20,7 @@ namespace AdministrativePenalty
         private int _totalRecord;
         private int _curRecord;
         private readonly int _interval;
-        private EventHandler<ExceptionEventArgs> _eventHandler;
+        private event EventHandler<ExceptionEventArgs> EventHandler;
         private Encoding _httpEncoding;
 
 
@@ -40,9 +40,9 @@ namespace AdministrativePenalty
             var httpHelper = new HttpHelper { Timeout = 5 * 60 * 1000 };
             
             var url = "http://www.zjcredit.gov.cn/html/sgsList02.htm";
-            _httpEncoding = httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(httpHelper.GetHtmlByGet(url));
-            InitHttpEncoding(url, httpHelper);
-            InitTotalRecord(url, httpHelper);
+            var html = httpHelper.GetHtmlByGet(url);
+            InitHttpEncoding(html);
+            InitTotalRecord(html);
             InitUrlQueue();
             
             while (_urlQueue.Count!=0)
@@ -82,16 +82,18 @@ namespace AdministrativePenalty
             }
             catch (Exception e)
             {
-                _eventHandler += WriteLog;
-                _eventHandler(this,new ExceptionEventArgs(e));
+                EventHandler += WriteLog;
+                var tempEventHandler = EventHandler;
+                tempEventHandler?.Invoke(this, new ExceptionEventArgs(e));
             }
         }
 
         private void Test()
         {
             var e = new Exception("测试日志");
-            _eventHandler += WriteLog;
-            _eventHandler(this, new ExceptionEventArgs(e));
+            EventHandler += WriteLog;
+            var tempEventHandler = EventHandler;
+            tempEventHandler?.Invoke(this, new ExceptionEventArgs(e));
         }
 
 
@@ -146,16 +148,14 @@ namespace AdministrativePenalty
         }
 
 
-        private void InitHttpEncoding(string url,HttpHelper httpHelper)
+        private void InitHttpEncoding(string html)
         {
-            var html = httpHelper.GetHtmlByGet(url);
-            httpHelper.HttpEncoding = HttpHelper.GetHtmlEncoding(html);
+            _httpEncoding = HttpHelper.GetHtmlEncoding(html);
         }
 
         
-        private void InitTotalRecord(string url,HttpHelper httpHelper)
+        private void InitTotalRecord(string html)
         {
-            var html = httpHelper.GetHtmlByGet(url);
             _totalRecord = int.Parse(Regex.Match(html, @"(?<=totalRecord[\s]*:[\s]*)\d+").Value);
         }
 

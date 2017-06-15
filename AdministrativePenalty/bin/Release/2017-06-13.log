@@ -1,0 +1,24 @@
+2017-06-13 16:41:58,305 [7] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString, IWebProxy proxy) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 150
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 108
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 77
+2017-06-13 16:41:58,309 [13] ERROR AdministrativePenalty.AdministrativePenaltyCrawler - AdministrativePenalty.AdministrativePenaltyCrawler
+ AdministrativePenalty.AdministrativePenaltyCrawlernameSystem.Net.WebException: 基础连接已经关闭: 接收时发生错误。 ---> System.IO.IOException: 无法从传输连接中读取数据: 远程主机强迫关闭了一个现有的连接。。 ---> System.Net.Sockets.SocketException: 远程主机强迫关闭了一个现有的连接。
+   在 System.Net.Sockets.Socket.Receive(Byte[] buffer, Int32 offset, Int32 size, SocketFlags socketFlags)
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.Sockets.NetworkStream.Read(Byte[] buffer, Int32 offset, Int32 size)
+   在 System.Net.Connection.SyncRead(HttpWebRequest request, Boolean userRetrievedStream, Boolean probeRead)
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 System.Net.HttpWebRequest.GetResponse()
+   在 ZJCredit.HttpHelper.GetHtmlByPost(String url, String postDataString, IWebProxy proxy) 位置 F:\myGitHub\ZJCredit\HelpLib\HttpHelper.cs:行号 150
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfo(String url, String postDataString) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 108
+   在 AdministrativePenalty.AdministrativePenaltyCrawler.GetInfoAndInsertDb(Object o) 位置 F:\myGitHub\ZJCredit\AdministrativePenalty\AdministrativePenaltyCrawler.cs:行号 77

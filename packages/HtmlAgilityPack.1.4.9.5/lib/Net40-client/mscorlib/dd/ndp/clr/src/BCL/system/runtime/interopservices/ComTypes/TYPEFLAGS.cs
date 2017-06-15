@@ -1,0 +1,31 @@
+﻿// Decompiled with JetBrains decompiler
+// Type: System.Runtime.InteropServices.ComTypes.TYPEFLAGS
+// Assembly: mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+// MVID: 2A55D587-43EC-479C-866B-425E85A3236D
+// Assembly location: C:\Windows\Microsoft.NET\Framework\v4.0.30319\mscorlib.dll
+
+namespace System.Runtime.InteropServices.ComTypes
+{
+  /// <summary>定义类型说明的属性和特性。</summary>
+  [Flags]
+  [__DynamicallyInvokable]
+  [Serializable]
+  public enum TYPEFLAGS : short
+  {
+    [__DynamicallyInvokable] TYPEFLAG_FAPPOBJECT = 1,
+    [__DynamicallyInvokable] TYPEFLAG_FCANCREATE = 2,
+    [__DynamicallyInvokable] TYPEFLAG_FLICENSED = 4,
+    [__DynamicallyInvokable] TYPEFLAG_FPREDECLID = 8,
+    [__DynamicallyInvokable] TYPEFLAG_FHIDDEN = 16,
+    [__DynamicallyInvokable] TYPEFLAG_FCONTROL = 32,
+    [__DynamicallyInvokable] TYPEFLAG_FDUAL = 64,
+    [__DynamicallyInvokable] TYPEFLAG_FNONEXTENSIBLE = 128,
+    [__DynamicallyInvokable] TYPEFLAG_FOLEAUTOMATION = 256,
+    [__DynamicallyInvokable] TYPEFLAG_FRESTRICTED = 512,
+    [__DynamicallyInvokable] TYPEFLAG_FAGGREGATABLE = 1024,
+    [__DynamicallyInvokable] TYPEFLAG_FREPLACEABLE = 2048,
+    [__DynamicallyInvokable] TYPEFLAG_FDISPATCHABLE = 4096,
+    [__DynamicallyInvokable] TYPEFLAG_FREVERSEBIND = 8192,
+    [__DynamicallyInvokable] TYPEFLAG_FPROXY = 16384,
+  }
+}
